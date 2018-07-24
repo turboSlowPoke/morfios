@@ -1,0 +1,62 @@
+.header{
+    background-color: #000000; /*url("../images/morpheu_obrez.jpg");*/
+}
+.morhios{
+    margin: auto;
+}
+.head-title{
+    text-align: center;
+    background: #5a6268;
+    opacity: 0.8;
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto 5% auto ;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.replic{
+    color: white;
+    opacity: 0.8;
+}
+.img_header{
+    position: relative;
+    width: 516px;
+    height: 438px;
+    background-image: url("../images/morpheu.jpg");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.red_tablet{
+    background: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 15%;
+}
+.blue_tablet{
+    background: blue;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 75%;
+}
+
+.left-column{
+    text-align: center;
+    color: white;
+    float: left;
+    width: 20%;
+    margin-left: 2%;
+    opacity: 0.89;
+}
+.right-column{
+    text-align: center;
+    color: white;
+    float: right;
+    width: 20%;
+    margin-right: 2%;
+    opacity: 0.89;
+}
