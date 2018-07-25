@@ -9,11 +9,8 @@
     background: #5a6268;
     opacity: 0.8;
     color: white;
-    border-radius: 5px;
-    width: 60%;
-    margin: 0 auto 5% auto ;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 1px;
 }
 .replic{
     color: white;
@@ -59,4 +56,21 @@
     width: 20%;
     margin-right: 2%;
     opacity: 0.89;
+}
+.head-timer{
+    text-align: center;
+    background: #5a6268;
+    opacity: 0.8;
+    color: white;
+}
+footer{
+    opacity: 0.9;
+    background: #5a6268;
+}
+.btn-footer:hover{
+    color: black;
+
+}
+.footer{
+    background: black;
 }
