@@ -1,28 +1,13 @@
-.header{
-    background-color: #000000; /*url("../images/morpheu_obrez.jpg");*/
-    box-shadow: 6px 6px 3px grey;
+body{
+    background: black;
 }
-.morhios{
-    margin: auto;
-}
-.head-title{
-    text-align: center;
-    background: #5a6268;
-    color: white;
-    padding-top: 0.5%;
-    padding-bottom: 1px;
-}
-.replic{
-    color: white;
-    opacity: 0.8;
-}
-.img_header{
+.morfius{
     position: relative;
     width: 516px;
     height: 438px;
     background-image: url("../images/morpheu.jpg");
     background-repeat: no-repeat;
-    margin: auto;
+    margin: 5% auto;
 }
 .red_tablet{
     /*background: red;*/
@@ -40,38 +25,12 @@
     margin-top: 66%;
     margin-left: 77%;
 }
-
-.left-column{
-    text-align: center;
-    color: white;
-    float: left;
+.title1{
+    color: green;
     width: 20%;
-    margin-left: 5%;
-    opacity: 0.89;
-    padding-top: 7%;
+    margin: auto;
 }
-.right-column{
-    text-align: center;
-    color: white;
-    float: right;
-    width: 20%;
-    margin-right: 5%;
-    opacity: 0.89;
-    padding-top: 7%;
-}
-.head-timer{
-    background: #5a6268;
-    box-shadow: 6px 6px 3px grey;
-    border: 5px solid black;
-    /*opacity: 0.8;*/
-}
-footer{
-    background: #5a6268;
-}
-.btn-footer:hover{
-    color: black;
-
-}
-.footer{
-    background: black;
+.title2{
+    color: green;
+    width: 70%;
 }
