@@ -37,10 +37,10 @@ body{
     color: green;
 }
 .bg-black{
-    background: #1f1f1e;
-    -webkit-box-shadow: -13px -5px 129px -24px rgba(250,250,250,1);
-    -moz-box-shadow: -13px -5px 129px -24px rgba(250,250,250,1);
-    box-shadow: -13px -5px 129px -24px rgba(250,250,250,1);
+    background: #141413;
+    -webkit-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
+    -moz-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
+    box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
 }
 .bg-black2{
     color: white;
@@ -48,16 +48,19 @@ body{
     margin: 5% auto;
     padding: 5%;
     text-align: center;
-    background: #1f1f1e;
-    -webkit-box-shadow: -13px -5px 129px -24px rgba(250,250,250,1);
-    -moz-box-shadow: -13px -5px 129px -24px rgba(250,250,250,1);
-    box-shadow: -13px -5px 129px -24px rgba(250,250,250,1);
+    background: #141413;
+    -webkit-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
+    -moz-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
+    box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
 }
 
-
-.head{
-    width: 100%;
-    padding: 2% auto;
-    color: white;
-    text-align: center;
+.card{
+    height: 300px;
+}
+.clock {
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
