@@ -4,20 +4,59 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/second_page.css.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body>
-        <div class="matrix_animation">
-            <canvas id="c"></canvas>
-            <span id = "author">adrian</span>
+<body ng-app="mainApp" ng-controller="mainController">
+<div class="w-50 mx-auto my-5 text-center text-white font-weight-bold bg-black rounded rounded-5 py-2 ">
+    <h5 class="w-75 mx-auto rounded rounded-bottom rounded-5  py-2">Масстер класс</h5>
+    <h5>“3 стратегии, сделавших нас миллионерами на трендах 2017-2018гг”</h5>
+</div>
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-6">
+            <div class="card bg-black text-white text-center">
+                <div class="card-header">До начала мероприятия осталось:</div>
+                <div class="card-body">
+                    <table class="table table-dark table-striped w-75 mx-auto shadow table-sm">
+                        <thead>
+                        <th>дни</th>
+                        <td>часы</td>
+                        <td>минуты</td>
+                        <td>секунды</td>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>{{days}}</th>
+                            <td>{{hours}}</td>
+                            <td>{{minutes}}</td>
+                            <td>{{seconds}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+        <div class="col-md-6">
+            <div class="card bg-black text-white text-center">
+                <div class="card-header">
+                    Количество мест ограничено, осталось:
+                </div>
+                <div class="card-body">
+                    10
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/angular.min.js"></script>
-<script src="js/animation.js"></script>
-<script src="js/user_service.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
