@@ -1,47 +1,19 @@
 
-var countSeconds=24;
+var countSeconds=55;
 var countMinutes=32;
 var countHours=24;
 
 $(document).ready(function () {
-    var secondDez=(countSeconds/10).toFixed();
+    var secondDez=((countSeconds/10);
     var secondUnit=(countSeconds%10)+1;
+    console.log(secondDez);
+    secondPlayDozens(4);
+
+    // if (secondDez!==5){
+    // }
 
     var minutesDez=(countMinutes/10).toFixed();
     var minutesUnit=(countMinutes%10);
-
-
-    aa = $("ul.secondPlayUnits li").eq(secondUnit);
-    //seconds
-    aa.addClass("before")
-        .removeClass("active")
-        .next("li")
-        .addClass("active")
-        .closest("body")
-        .addClass("play");
-    aa = $("ul.secondPlayDozens li").eq(4);
-    aa.addClass("before")
-        .removeClass("active")
-        .next("li")
-        .addClass("active")
-        .closest("body")
-        .addClass("play");
-    //minutes
-    console.log("minutesUnit="+minutesUnit);
-    aa = $("ul.minutePlayUnits li").eq(10);
-    aa.addClass("before")
-        .removeClass("active")
-        .next("li")
-        .addClass("active")
-        .closest("body")
-        .addClass("play");
-    aa = $("ul.minutePlayDozens li").eq(2);
-    aa.addClass("before")
-        .removeClass("active")
-        .next("li")
-        .addClass("active")
-        .closest("body")
-        .addClass("play");
 
 
 });
@@ -107,12 +79,12 @@ function secondPlayUnits() {
 
 }
 
-function secondPlayDozens() {
+function secondPlayDozens(secondDez) {
     $("body").removeClass("play");
     var aa = $("ul.secondPlayDozens li.active");
 
     if (aa.html() == undefined) {
-        aa = $("ul.secondPlayDozens li").eq(0);
+        aa = $("ul.secondPlayDozens li").eq(secondDez);
         aa.addClass("before")
             .removeClass("active")
             .next("li")
@@ -275,5 +247,62 @@ function hourPlayDozens() {
             .addClass("play");
     }
 
+}
+
+function setSecondUntit(secondUnit) {
+    $("body").removeClass("play");
+    var aa = $("ul.secondPlayUnits li.active");
+
+    if (aa.html() == undefined) {
+        aa = $("ul.secondPlayUnits li").eq(0);
+        aa.addClass("before")
+            .removeClass("active")
+            .next("li")
+            .addClass("active")
+            .closest("body")
+            .addClass("play");
+
+    }
+    else if (aa.is(":last-child")) {
+        $("ul.secondPlayUnits li").removeClass("before");
+        aa.addClass("before").removeClass("active");
+        aa = $("ul.secondPlayUnits li").eq(Math.abs(10-secondUnit));
+        aa.addClass("active")
+            .closest("body")
+            .addClass("play");
+    }
+    else {
+        $("ul.secondPlayUnits li").removeClass("before");
+        aa.addClass("before")
+            .removeClass("active")
+            .next("li")
+            .addClass("active")
+            .closest("body")
+            .addClass("play");
+    }
+}
+
+function setSecondDez(secondDez) {
+    $("body").removeClass("play");
+    var aa = $("ul.secondPlayDozens li.active");
+
+    if (aa.html() == undefined) {
+        aa = $("ul.secondPlayDozens li").eq(0);
+        aa.addClass("before")
+            .removeClass("active")
+            .next("li")
+            .addClass("active")
+            .closest("body")
+            .addClass("play");
+
+    }
+    else if (aa.is(":last-child")) {
+        $("ul.secondPlayDozens li").removeClass("before");
+        aa.addClass("before").removeClass("active");
+        aa = $("ul.secondPlayDozens li").eq(Math.abs(10-secondDez));
+        aa.addClass("active")
+            .closest("body")
+            .addClass("play");
+    }
 }
 
