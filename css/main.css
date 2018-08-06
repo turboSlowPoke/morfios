@@ -10,8 +10,17 @@ body{
     height: 438px;
     background-image: url("../images/morpheu.jpg");
     background-repeat: no-repeat;
-    margin: 5% auto;
+    margin: 5% auto 0 auto;
 }
+
+@media (max-width: 776px){
+    .morfius{
+        width: 310px;
+        height:263px;
+        background-image: url("../images/morpheu_mini.jpg");
+    }
+}
+
 .red_tablet{
     /*background: red;*/
     width: 40px;
@@ -31,7 +40,7 @@ body{
 
 .title{
     color: green;
-    width: 70%;
+    /*width: 70%;*/
 }
 .text-green{
     color: green;
