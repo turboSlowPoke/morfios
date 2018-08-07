@@ -4,7 +4,7 @@ var countMinutes=32;
 var countHours=24;
 
 $(document).ready(function () {
-    var secondDez=((countSeconds/10);
+    var secondDez=(countSeconds/10);
     var secondUnit=(countSeconds%10)+1;
     console.log(secondDez);
     secondPlayDozens(4);
