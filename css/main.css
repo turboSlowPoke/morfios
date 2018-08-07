@@ -47,9 +47,9 @@ body{
 }
 .bg-black{
     background: #141413;
-    -webkit-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
-    -moz-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
-    box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
+    /*-webkit-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);*/
+    /*-moz-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);*/
+    /*box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);*/
 }
 .bg-black2{
     color: white;
@@ -58,18 +58,14 @@ body{
     padding: 5%;
     text-align: center;
     background: #141413;
-    -webkit-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
-    -moz-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
-    box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);
+    /*-webkit-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);*/
+    /*-moz-box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);*/
+    /*box-shadow: 15px 10px 50px -14px rgba(255,255,255,0.75);*/
 }
 
-.card{
-    height: 300px;
-}
-.clock {
-    width: 650px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+
+.myshadow{
+    -webkit-box-shadow: 5px -2px 123px -22px rgba(255,255,255,1);
+    -moz-box-shadow: 5px -2px 123px -22px rgba(255,255,255,1);
+    box-shadow: 5px -2px 123px -22px rgba(255,255,255,1);
 }

@@ -1,20 +1,34 @@
 
-var countSeconds=55;
-var countMinutes=32;
-var countHours=24;
+var countSeconds="38";
+var countMinutes="32";
+var countHours="19";
+var countDay="10";
 
 $(document).ready(function () {
-    var secondDez=(countSeconds/10);
-    var secondUnit=(countSeconds%10)+1;
-    console.log(secondDez);
-    secondPlayDozens(4);
-
-    // if (secondDez!==5){
-    // }
-
-    var minutesDez=(countMinutes/10).toFixed();
-    var minutesUnit=(countMinutes%10);
-
+    for (var i=9;i>countSeconds.substr(1);i--){
+        secondPlayUnits();
+    }
+    for (var i=5;i>countSeconds.substr(0,1);i--){
+        secondPlayDozens();
+    }
+    for (var i=9;i>countMinutes.substr(1);i--){
+        minutePlayUnits();
+    }
+    for (var i=5;i>countMinutes.substr(0,1);i--){
+        minutePlayDozens();
+    }
+    for (var i=4;i>countHours.substr(1);i--){
+        hourPlayUnits();
+    }
+    for (var i=2;i>countHours.substr(0,1);i--){
+        hourPlayDozens();
+    }
+    for (var i=9;i>countDay.substr(1);i--){
+        dayPlayUnits();
+    }
+    for (var i=9;i>countDay.substr(0,1);i--){
+        dayPlayDozens();
+    }
 
 });
 
@@ -79,12 +93,12 @@ function secondPlayUnits() {
 
 }
 
-function secondPlayDozens(secondDez) {
+function secondPlayDozens() {
     $("body").removeClass("play");
     var aa = $("ul.secondPlayDozens li.active");
 
     if (aa.html() == undefined) {
-        aa = $("ul.secondPlayDozens li").eq(secondDez);
+        aa = $("ul.secondPlayDozens li").eq(0);
         aa.addClass("before")
             .removeClass("active")
             .next("li")
@@ -249,12 +263,12 @@ function hourPlayDozens() {
 
 }
 
-function setSecondUntit(secondUnit) {
+function dayPlayUnits() {
     $("body").removeClass("play");
-    var aa = $("ul.secondPlayUnits li.active");
+    var aa = $("ul.dayPlayUnits li.active");
 
     if (aa.html() == undefined) {
-        aa = $("ul.secondPlayUnits li").eq(0);
+        aa = $("ul.dayPlayUnits li").eq(0);
         aa.addClass("before")
             .removeClass("active")
             .next("li")
@@ -264,15 +278,15 @@ function setSecondUntit(secondUnit) {
 
     }
     else if (aa.is(":last-child")) {
-        $("ul.secondPlayUnits li").removeClass("before");
+        $("ul.dayPlayUnits li").removeClass("before");
         aa.addClass("before").removeClass("active");
-        aa = $("ul.secondPlayUnits li").eq(Math.abs(10-secondUnit));
+        aa = $("ul.dayPlayUnits li").eq(0);
         aa.addClass("active")
             .closest("body")
             .addClass("play");
     }
     else {
-        $("ul.secondPlayUnits li").removeClass("before");
+        $("ul.dayPlayUnits li").removeClass("before");
         aa.addClass("before")
             .removeClass("active")
             .next("li")
@@ -280,14 +294,15 @@ function setSecondUntit(secondUnit) {
             .closest("body")
             .addClass("play");
     }
+
 }
 
-function setSecondDez(secondDez) {
+function dayPlayDozens() {
     $("body").removeClass("play");
-    var aa = $("ul.secondPlayDozens li.active");
+    var aa = $("ul.dayPlayDozens li.active");
 
     if (aa.html() == undefined) {
-        aa = $("ul.secondPlayDozens li").eq(0);
+        aa = $("ul.dayPlayDozens li").eq(0);
         aa.addClass("before")
             .removeClass("active")
             .next("li")
@@ -297,12 +312,24 @@ function setSecondDez(secondDez) {
 
     }
     else if (aa.is(":last-child")) {
-        $("ul.secondPlayDozens li").removeClass("before");
+        $("ul.dayPlayDozens li").removeClass("before");
         aa.addClass("before").removeClass("active");
-        aa = $("ul.secondPlayDozens li").eq(Math.abs(10-secondDez));
+        aa = $("ul.dayPlayDozens li").eq(0);
         aa.addClass("active")
             .closest("body")
             .addClass("play");
     }
+    else {
+        $("ul.dayPlayDozens li").removeClass("before");
+        aa.addClass("before")
+            .removeClass("active")
+            .next("li")
+            .addClass("active")
+            .closest("body")
+            .addClass("play");
+    }
+
 }
+
+
 
