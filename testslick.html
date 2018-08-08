@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/frameworks/slick.css">
+    <link rel="stylesheet" href="css/frameworks/slick-theme.css">
+</head>
+<body>
+<div class="your-class" style="width: 50%">
+    <div style="text-align: center; background: cadetblue">your content1</div>
+    <div>your content2</div>
+    <div>your content3</div>
+</div>
+<script src="js/frameworks/jquery.min.js"></script>
+<script src="js/frameworks/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.your-class').slick({
+            accessibility: true,
+            adaptiveHeight: true,
+            autoplay:true
+    });
+    });
+</script>
+</body>
+</html>
