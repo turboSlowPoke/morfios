@@ -89,6 +89,7 @@ body{
 }
 .slide{
     width: 50%;
+
 }
 @media (max-width: 776px){
     .block01 .block02 .block03 .block04{
