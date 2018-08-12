@@ -5,5 +5,7 @@ $(document).ready(function(){
         arrows:true,
         respondTo:'slider',
         infinite:true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
     });
 });

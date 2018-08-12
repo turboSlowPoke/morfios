@@ -69,8 +69,8 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: 1;
-    color: #FEB225;
+    opacity: .75;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -111,8 +111,6 @@
 {
     content: '←';
 }
-
-
 
 /* Dots */
 .slick-dotted.slick-slider
