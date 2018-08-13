@@ -100,8 +100,9 @@
 }
 .slide{
     width: 50%;
-
 }
+
+
 
 
 @media (max-width: 776px){
@@ -120,12 +121,26 @@
     .subscribe_btn{
         width: 80%;
     }
-}
-@media  (min-width : 775px) and (max-width : 1023px){
-
+    .block01,.block02,.block03,.block04{
+        font-size: 1em;
+    }
+    .prev,.prev1,.next,.next1{
+        font-size: 0.5em;
+    }
+    .slider1{
+        font-size: 1.5em;
+    }
+    .box02{
+        font-size:0.5em;
+    }
+    .caption01{
+        font-size:2em;
+    }
+    .caption02{
+        font-size:2em;
+    }
 }
 
 @media  (min-width : 775px){
-
 
 }
