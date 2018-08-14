@@ -27,7 +27,7 @@ $(document).ready(function () {
     for (var i=5;i>countMinutes.substr(0,1);i--){
         minutePlayDozens();
     }
-    for (var i=4;i>countHours.substr(1);i--){
+    for (var i=9;i>countHours.substr(1);i--){
         hourPlayUnits();
     }
     for (var i=2;i>countHours.substr(0,1);i--){
